@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 100px; /* Adjust as needed */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 25px;
+  position: relative;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+}
+
+.navbar-submenu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-submenu li {
+  margin-bottom: 5px;
+}
+
+.navbar-item:hover .navbar-submenu {
+  display: block;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.signin-button,
+.signup-button {
+  margin-left: 100px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* styling for carts */
+#container {
+  display: flex;
+  margin: 3rem;
+}
+h2 {
+  color: rgb(4, 96, 136);
+  font-size: 2rem;
+  font-weight: 600;
+}
+h3 {
+  color: rgb(4, 96, 136);
+}
+#product-list {
+  width: 70%;
+}
+#shopping-cart {
+  width: 30%;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.product-item {
+  width: 25rem;
+  border: 1px solid green;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.product-item:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.product-item img {
+  width: 20rem;
+  height: 20rem;
+}
+button {
+  background-color: rgb(2, 132, 132);
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(4, 68, 68);
+}
+#clear-cart {
+  background-color: rgb(203, 0, 0);
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  cursor: pointer;
+}
+#clear-cart:hover {
+  background-color: rgb(145, 3, 3);
+}
